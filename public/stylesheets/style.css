@@ -1,7 +1,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: linear-gradient(45deg, #d4cca1, #ffe136);
+  background: linear-gradient(45deg, #bae9ae, #ffe136);
+}
+
+.container {
+    background: linear-gradient(45deg,#ffe136, #d4cca1);
 }
 
 main {

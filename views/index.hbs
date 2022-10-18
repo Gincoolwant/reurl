@@ -1,10 +1,18 @@
-<div class="container">
-  <form action="/urls/results" method="post">
-    <div class="input-group mb-3">
-      <span class="input-group-text" id="basic-addon3">https://</span>
+<div class="container shadow p-3 mb-5 bg-body rounded">
+  <form action="/" method="post" id="url-form">
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon3">url</span>
       <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
-        placeholder="Please input your url here...">
+        placeholder="Please input https://..." name="url" value="{{ url }}">
       <button class="btn btn-secondary" type="submit" id="button-addon2">Shorten</button>
     </div>
   </form>
+
+  {{#if reurl}}
+  <div>
+    <h2>Your reurl is here:
+      <span><a href="{{reurl}}">{{reurl}}</a></span>
+    </h2>
+  </div>
+  {{/if}}
 </div>

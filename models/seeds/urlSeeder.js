@@ -1,11 +1,5 @@
 const Url = require('../urls')
-const mongoose = require('mongoose')
-mongoose.connect(process.env.MongoDB_URI_reurl)
-const db = mongoose.connection
-
-db.on('error', () => {
-  console.log('error:', error)
-})
+const mongoose = require('./config/mongoose')
 
 db.once('open', () => {
     Url.create({

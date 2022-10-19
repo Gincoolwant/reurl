@@ -1,5 +1,5 @@
 // generate random password
-function urlEncode(length) {
+function urlEncode (length) {
   let reurlCode = ''
   let collection = []
 
@@ -10,11 +10,11 @@ function urlEncode(length) {
   collection = collection.concat(lowerCaseLetters).concat(upperCaseLetters).concat(numbers)
 
   for (let i = 1; i <= length; i++) {
-    randomIndex = Math.floor(Math.random() * collection.length)
+    const randomIndex = Math.floor(Math.random() * collection.length)
     reurlCode += collection[randomIndex]
   }
 
   return reurlCode
 }
 
-module.exports = {urlEncode}
+module.exports = { urlEncode }

@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Url = require('../models/urls')
 const port = 3000
+const urlEncode = require('../utilities/urlEncode_generator')
 
 router.get('/', (req, res) => {
   res.render('index')
@@ -14,7 +15,7 @@ router.post('/', (req, res) => {
     .then(urlSearchResult => {
       if (!urlSearchResult) {
         const encodeLength = 5
-        const urlCode = urlEncode(encodeLength)
+        const urlCode = urlEncode.urlEncode(encodeLength)
         Url.create({ url, urlCode })
         return res.render('index', { url, reurl: `http://localhost:${port}/${urlCode}` })
       }

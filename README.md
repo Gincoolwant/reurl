@@ -18,7 +18,7 @@
 
 ## 安裝執行
 1. 確認安裝node.js & npm。
-2. 開啟Terminal將專案 clone 至本地位置： `git clone https://github.com/Gincoolwant/restaurant_list.git`
+2. 開啟Terminal將專案 clone 至本地位置： `git clone https://github.com/Gincoolwant/reurl.git`
 3. 開啟Terminal並移至專案資料夾安裝使用套件： `npm install`
 4. 請設定你的環境變數： `MongoDB_URI_reurl="Your MongoDB connection string"`
 5. 執行專案： `npm run start`

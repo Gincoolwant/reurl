@@ -1,12 +1,17 @@
 <div class="container shadow p-3 mb-5 bg-body rounded-3">
-  <form action="/" method="post" id="url-form">
+  <form action="/" method="post" id="url-form" novalidate>
     <div class="input-group">
       <span class="input-group-text" id="basic-addon3">url</span>
-      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+      <input type="url" pattern="https://.*" class="form-control" id="basic-url" aria-describedby="basic-addon3"
         placeholder="Please input https://..." name="url" value="{{ url }}" required>
-      <button class="btn btn-secondary" type="submit" id="button-addon2">Shorten</button>
+      <button class="btn btn-secondary" type="submit" id="shortenBtn">Shorten</button>
+      <div class="invalid-feedback">
+        Please input valid url.(begins with https://)
+        e.g. https://www.google.com.tw
+      </div>
     </div>
   </form>
+  
 
   {{#if reurl}}
   <div class="mt-3">

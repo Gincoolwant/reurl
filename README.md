@@ -1,5 +1,5 @@
 # url shortener
-將長長的網址縮短成固定格式(http://localhost:3000/"5碼隨機碼")
+將長長的網址縮短成固定格式(`http://localhost:3000/"5碼隨機碼"`)
 
 首頁
 ![首頁](./public/images/index.png)
@@ -12,7 +12,8 @@
 
 ## 功能詳情
 + 輸入網址生成短網址(網址與短網址為一對一對應關係)。
-  i.e. 將https://www.ck.com縮址得到http://localhost:3000/ab123, 下次再輸入https://www.ck.com進行縮址也會得到http://localhost:3000/ab123
+  i.e. 將`https://www.ck.com`縮址得到`http://localhost:3000/ab123`, 下次再輸入`https://www.ck.com`進行縮址也會得到`http://localhost:3000/ab123`
++ 輸入驗證(必為https://格式)。
 + 點擊copy按鍵自動複製短網址。
 + 點擊短網址轉址新開視窗至原網址。
 

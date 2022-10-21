@@ -4,6 +4,9 @@
 首頁
 ![首頁](./public/images/index.png)
 
+輸入驗證(必填且須為`https://`開頭格式)
+![輸入驗證](./public/images/invalid.png)
+
 點擊短網址立即轉址
 ![點擊短網址立即轉址](./public/images/reurl.png)
 
@@ -13,7 +16,7 @@
 ## 功能詳情
 + 輸入網址生成短網址(網址與短網址為一對一對應關係)。
   i.e. 將`https://www.ck.com`縮址得到`http://localhost:3000/ab123`, 下次再輸入`https://www.ck.com`進行縮址也會得到`http://localhost:3000/ab123`
-+ 驗證輸入(必填且開頭必須為`https://`格式)。
++ 輸入驗證(必填且須為`https://`開頭格式)。
 + 點擊copy按鍵自動複製短網址。
 + 點擊短網址轉址新開視窗至原網址。
 

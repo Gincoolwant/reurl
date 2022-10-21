@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MongoDB_URI_reurl)
+mongoose.connect(process.env.MongoDB_URI_REURL)
 const db = mongoose.connection
 
 db.on('error', () => {
